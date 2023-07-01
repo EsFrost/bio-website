@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Titillium+Web:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Rokkitt:wght@100;400;700&family=Titillium+Web:wght@300;400;700&display=swap');
+
+:root {
+  --color-background: #e3e1ea;
+  --color-foreground: #0b0a0f;
+  --color-background-dark: #0b0a0f;
+  --color-foreground-dark: #e3e1ea;
+
+  --color-prim-button: rgb(86, 78, 115);
+  --color-sec-button: rgb(207, 203, 220);
+  --color-accent: rgb(75, 68, 100);
+
+  --light: #d8dbe0;
+  --dark: #28292c;
+
+  font-family: 'Rokkitt';
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.dark {
+  background-color: var(--color-background-dark);
+  color: var(--color-foreground-dark);
+}
+
+.light {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+

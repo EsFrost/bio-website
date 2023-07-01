@@ -1,0 +1,35 @@
+.style-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 600px;
+    margin: 70px 2.5% 0 2.5%;
+}
+
+.default-nav {
+    margin: 2.5%;
+}
+
+.button {
+    background-color: var(--color-prim-button) !important;
+    font-family: 'Rokkitt' !important;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--color-accent) !important;
+}
+
+@media screen and (max-width: 749px) {
+    .slide-container {
+        display: none;
+    }
+}

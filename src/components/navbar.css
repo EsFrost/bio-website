@@ -1,0 +1,137 @@
+nav {
+    font-family: 'Oswald';
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 95%;
+    padding: 0 30px;
+    background: var(--color-accent);
+    color: var(--color-background);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    font-size: 1.3rem;
+    border-radius: 13px;
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.navbar-items h1 {
+    justify-self: start;
+    cursor: pointer;
+}
+
+.logo-icon {
+    margin-left: 0.2rem;
+    font-size: 1.6rem;
+}
+
+.navbar-items ul {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 10px;
+    font-size: 1.2rem;
+    align-items: center;
+    text-align: center;
+    justify-content: end;
+}
+
+.navbar-items ul li a {
+    color: var(--color-background);
+    text-decoration: none;
+    padding: 0.7rem 1rem;
+    white-space: nowrap;
+}
+
+.nav-list-icons {
+    margin-right: 10px;
+}
+
+.navbar-items ul li a:hover {
+    background: var(--color-sec-button);
+    color: var(--color-foreground);
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu-icons {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-burger {
+    color: var(--color-background);
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 1180px) {
+    .navbar-items h1 {
+        font-size: 1.4rem;
+    }
+
+    .logo-icon {
+        font-size: 1.3rem;
+    }
+
+    .navbar-items ul {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .navbar-items {
+        z-index: 99;
+    }
+
+    .navbar-items ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background: rgba(75, 68, 100, 0.65);
+        box-shadow: 0 8px 32p rgba(31, 30, 135, 0.37);
+        backdrop-filter: blur(4px);
+        border-radius: 13px;
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: -1000px;
+        left: 0%;
+        align-items: stretch;
+        padding: 80px 0 30px 0;
+        margin: 0;
+        z-index: -1;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-items ul li a {
+        display: block;
+        widows: 100%;
+        padding: 2rem 0;
+        color: var(--color-background);
+    }
+
+    .navbar-items ul li a:hover {
+        background: rgba(207, 203, 220, 0.5);
+        backdrop-filter: blue(20px);
+    }
+
+    .menu-icons {
+        display: block;
+    }
+
+    .navbar-items ul.active {
+        top: 0;
+    }
+}

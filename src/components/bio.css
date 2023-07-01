@@ -1,0 +1,178 @@
+.bio-container {
+    width: 95%;
+    margin: 50px auto 30px auto;
+    padding: 0 30px;
+    height: auto;
+    background-color: var(--color-prim-button);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 13px;
+    color: var(--color-background);
+    display: grid;
+    gap: 15px;
+    padding-bottom: 15px;
+    grid-template-areas: "header header header"
+                         "content content content"
+                         " . exp exp"
+                         "date names names"
+                         "date-two names-two names-two"
+                         "date-three names-three names-three"
+                         "date-four names-four names-four"
+                         "date-five names-five names-five"
+                         ". education education"
+                         "edu-date-one edu-school-one edu-school-one"
+                         "edu-date-two edu-school-two edu-school-two"
+                         "edu-date-three edu-school-three edu-school-three"
+                         ". misc misc"
+                         ". lang-one lang-one"
+                         ". lang-two lang-two"
+                         ". lang-three lang-three"
+                         ". music-one music-one"
+                         ". music-two music-two"
+                         ". photo photo"
+                         ". tech tech"
+                         ;
+    grid-template-columns: 2fr 10fr;
+}
+
+.bio-heading {
+    grid-area: header;
+    font-size: 2.5rem;
+    margin: auto;
+    text-align: center;
+}
+
+.bio-content {
+    grid-area: content;
+    font-size: 1.5rem;
+}
+
+.bio-list-items {
+    margin-top: 20px;
+    grid-area: exp;
+    font-size: 2rem;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.bio-dates {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+#dates-row-one {
+    grid-area: date;
+}
+
+.fa-items {
+    font-size: 1.5rem;
+}
+
+#work-row-one {
+    grid-area: names;
+}
+
+.work-title {
+    font-size: 1.5rem;
+}
+
+.work-name {
+    font-size: 1.3rem;
+}
+
+.work-desc {
+    font-size: 1.1rem;
+}
+
+#dates-row-two {
+    grid-area: date-two;
+}
+
+#work-row-two {
+    grid-area: names-two;
+}
+
+#dates-row-three {
+    grid-area: date-three;
+}
+
+#work-row-three {
+    grid-area: names-three;
+}
+
+#dates-row-four {
+    grid-area: date-four;
+}
+
+#work-row-four {
+    grid-area: names-four;
+}
+
+#dates-row-five {
+    grid-area: date-five;
+}
+
+#work-row-five {
+    grid-area: names-five;
+}
+
+.education {
+    grid-area: education;
+}
+
+#edu-date-one {
+    grid-area: edu-date-one;
+}
+
+#edu-school-one {
+    grid-area: edu-school-one;
+}
+
+#edu-date-two {
+    grid-area: edu-date-two;
+}
+
+#edu-school-two {
+    grid-area: edu-school-two;
+}
+
+#edu-date-three {
+    grid-area: edu-date-three;
+}
+
+#edu-school-three {
+    grid-area: edu-school-three;
+}
+
+.misc-skills {
+    grid-area: misc;    
+}
+
+#lang-one {
+    grid-area: lang-one;
+}
+
+#lang-two {
+    grid-area: lang-two;
+}
+
+#lang-three {
+    grid-area: lang-three;
+}
+
+#music-one {
+    grid-area: music-one;
+}
+
+#music-two {
+    grid-area: music-two;
+}
+
+#photo {
+    grid-area: photo;
+}
+
+#tech {
+    grid-area: tech;
+}
